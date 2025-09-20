@@ -1,19 +1,19 @@
 #!/bin/bash
 
-rm kiro_repo*
+rm esta*
 
 echo "repo-add"
-repo-add -n -R kiro_repo.db.tar.gz *.pkg.tar.zst
+repo-add -n -R esta.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm kiro_repo.db
+rm esta.db
 
-rm kiro_repo.files
+rm esta.files
 
-mv kiro_repo.db.tar.gz kiro_repo.db
+mv esta.db.tar.gz esta.db
 
-mv kiro_repo.files.tar.gz kiro_repo.files
+mv esta.files.tar.gz esta.files
 
 echo "####################################"
 echo "Repo Updated!!"
